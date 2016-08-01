@@ -110,7 +110,6 @@
     
     if(pageNum != _currentPage) {
         _currentPage = pageNum;
-        
         self.sourceBGImg.image = [(DJPictureViewerModel *)[_imgArr objectAtIndex:_currentPage] dj_image];
         self.processBGImg.image = _currentPage + 1 != [_imgArr count] ? [(DJPictureViewerModel *)[_imgArr objectAtIndex:_currentPage + 1] dj_image] : nil;
     }
