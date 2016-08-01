@@ -115,7 +115,6 @@
     }
     
     float offset =  self.scrollView.contentOffset.x - (_currentPage * self.frame.size.width);
-    
     if(offset < 0) {
         self.pageControl.currentPage = 0;
         
